@@ -3,7 +3,7 @@ var port = process.env.PORT || 8080;
  
 var cors_proxy = require('cors-anywhere');
 cors_proxy.createServer({
-    originWhitelist: [], // Allow all origins 
+    originWhitelist: ['https://proton.pauliexclusionprinciple.workers.dev/', 'https://1.petunia.workers.dev/'], // Allow all origins 
     requireHeader: [],
     removeHeaders: [],
     setHeaders: {"referer": "https://revisionvillage.com"}
